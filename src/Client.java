@@ -5,7 +5,7 @@ public class Client
 {
   public static void main(String args[]) throws Exception
   {
-    final Registry registry = LocateRegistry.getRegistry(1099);
+    final Registry registry = LocateRegistry.getRegistry(10176);
 
     final Calculator calculator = (Calculator) registry.lookup("calculator");
 
