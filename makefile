@@ -1,10 +1,10 @@
-BUILD_DIR = ./build/
+BUILD_DIR = ./src/build/
 
 all: clean build
 
 build:
 	mkdir -p $(BUILD_DIR);
-	javac -d $(BUILD_DIR) *.java;
+	javac -d $(BUILD_DIR) src/*.java;
 
 clean:
 	rm -rf $(BUILD_DIR);
