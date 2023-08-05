@@ -1,16 +1,15 @@
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.Stack;
-import java.util.Vector;
 
 public class CalculatorImpl extends UnicastRemoteObject implements Calculator
 {
-  Integer cnt;
+  //Integer cnt;
   Stack<Integer> stack = new Stack<>();
   CalculatorImpl() throws RemoteException
   {
     //super();
-    cnt = 0;
+    //cnt = 0;
     stack.clear();
   }
 
