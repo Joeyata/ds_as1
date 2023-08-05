@@ -5,10 +5,9 @@ public class Server
 {
   public static void main(String args[]) throws Exception
   {
-    final Registry registry = LocateRegistry.createRegistry(10176);
+    final Registry registry = LocateRegistry.createRegistry(10326);
 
     final Calculator calculator = new CalculatorImpl();
-
 
     registry.bind("calculator", calculator);
   }

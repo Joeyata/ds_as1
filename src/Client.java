@@ -8,11 +8,13 @@ public class Client
 {
   public static void main(String args[]) throws Exception
   {
-    final Registry registry = LocateRegistry.getRegistry(10176);
+    final Registry registry = LocateRegistry.getRegistry(10326);
 
     final Calculator calculator = (Calculator) registry.lookup("calculator");
 
-    try (Scanner sc = new Scanner(new File("input.txt"))) {
+    String file_name = "input.txt";
+    if(args.length > 0) file_name = args[0];
+    try (Scanner sc = new Scanner(new File(file_name))) {
       while (sc.hasNextLine()) {
 
         String line = sc.nextLine();

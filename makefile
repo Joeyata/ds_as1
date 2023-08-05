@@ -13,4 +13,4 @@ launch-server:
 	java -cp $(BUILD_DIR) Server;
 
 launch-client:
-	java -cp $(BUILD_DIR) Client;
+	java -cp $(BUILD_DIR) Client $(file_name);
